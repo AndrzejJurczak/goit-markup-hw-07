@@ -6,12 +6,12 @@
   --third-text-color: #757575;
   --fourth-color: #2196f3;
   --fifth-color: #f5f4fa;
+  --sixth-color: #000;
   --background-color-1: #fff;
   --background-color-2: #2f303a;
   --logo-web-color: #2196f3;
   --logo-studio-first-color: #000;
   --logo-studio-second-color: #fff;
-  --button-text-color: #000;
   --line-color: #ececec;
   --footer-color--1: rgba(255, 255, 255, 0.6);
   --footer-color--2: rgba(255, 255, 255, 0.1);
@@ -23,7 +23,7 @@
 /*body style*/
 body {
   font-family: var(--main-font);
-  background-color: var(--background-body-color);
+  background-color: var(--background-color-1);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -86,7 +86,7 @@ header {
   height: 600px;
   margin: 0 auto;
 }
-.main-title {
+.hero__title {
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -98,7 +98,7 @@ header {
   margin: 0 auto;
 }
 
-.what-we-do-title {
+.skills-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -110,17 +110,17 @@ header {
 }
 /*end body style*/
 
-.top {
+.page-header {
   display: flex;
   align-items: center;
 }
-.navigation-list {
+.header-navigation__list {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 46px;
 }
-.navigation-link {
+.header-navigation__link {
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -129,7 +129,7 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-contact-list {
+.header-contact {
   font-weight: 500;
   display: flex;
   margin-left: auto;
@@ -138,7 +138,7 @@ header {
   padding-bottom: 32px;
   align-items: center;
 }
-.navigation-contact-link {
+.header-contact__link {
   font-weight: 500;
   line-height: 1.17;
   color: var(--third-text-color);
@@ -149,8 +149,8 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-link:hover,
-.navigation-link:focus {
+.header-navigation__link:hover,
+.header-navigation__link:focus {
   color: var(--fourth-color);
 }
 
@@ -168,7 +168,7 @@ header {
   background: var(--fourth-color);
   border-radius: 2px;
 }
-.main-button {
+.hero__button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -190,8 +190,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-button:hover,
-.main-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--secondary-text-color);
 }
 .button-portfolio-list {
@@ -256,21 +256,23 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-link:hover,
-.navigation-link:focus,
+.header-navigation__link:hover,
+.header-navigation__link:focus,
 .bottom-contact-address:hover,
 .bottom-contact-address:focus,
 .bottom-contact-link:hover,
 .bottom-contact-link:focus,
-.icon-contact:focus,
-.icon-contact:hover {
+.navigation-contact__icon-1:focus,
+.navigation-contact__icon-1:hover,
+.navigation-contact__icon-2:focus,
+.navigation-contact__icon-2:hover {
   color: var(--fourth-color);
   cursor: pointer;
 }
-.navigation-contact-item:hover,
-.navigation-contact-item:focus,
-.navigation-contact-link:focus,
-.navigation-contact-link:hover {
+.header-contact__item:hover,
+.header-contact__item:focus,
+.header-contact__link:focus,
+.header-contact__link:hover {
   color: var(--fourth-color);
   cursor: pointer;
   fill: currentColor;
@@ -279,8 +281,7 @@ header {
 /*end links*/
 
 /*studio-name - > color of name Studio Web */
-.logo-top,
-.logo-bottom {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: bold;
@@ -288,13 +289,13 @@ header {
   line-height: 1.17;
   margin-right: 94px;
 }
-.name-1 {
+.logo__name-1 {
   color: var(--logo-web-color);
 }
-.name-2 {
+.logo__name-2 {
   color: var(--logo-studio-first-color);
 }
-.name-3 {
+.logo__name-3 {
   color: var(--logo-studio-second-color);
 }
 
@@ -342,21 +343,21 @@ header {
   margin-bottom: 16px;
 }
 /*end team name*/
-.lorem {
-  padding-bottom: 0px;
+.our-strengths-section {
+  padding-bottom: 0;
 }
-.lorem-list {
+.our-strengths {
   display: flex;
   gap: 30px;
   text-align: left;
   justify-content: center;
 }
-.lorem-title {
+.our-strengths__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
 }
-.lorem-description {
+.our-strengths__description {
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-text-color);
@@ -364,17 +365,21 @@ header {
   flex-wrap: nowrap;
   width: 270px;
 }
-.what-we-do-title {
+.skills__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
-.what-we-do-list {
+.skills__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+.skills__img {
+  width: 370px;
+  height: 294px;
 }
 .our-customers-list {
   display: flex;
@@ -383,9 +388,7 @@ header {
 }
 
 .our-customers-item a:hover,
-.our-customers-item a:focus
-/*.our-customers-item:hover,
-.our-customers-item:focus*/ {
+.our-customers-item a:focus {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--secondary-text-color);
@@ -424,7 +427,17 @@ header {
 /* ----- end nasi klienci - our client-----*/
 
 /* ----- icons -----*/
-.icon-contact {
+.header-contact__icon-1 {
+  width: 16px;
+  height: 12px;
+}
+.header-contact__icon-2 {
+  width: 12px;
+  height: 16px;
+}
+
+.header-contact__icon-1,
+.header-contact__icon-2 {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -455,7 +468,7 @@ header {
   color: var(--background-color-1);
   background-color: var(--fourth-color);
 }
-.lorem-icon {
+.our-strengths__block {
   background-color: var(--fifth-color);
   margin-bottom: 30px;
   width: 270px;
@@ -464,7 +477,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.lorem-icon svg {
+.our-strengths__icon {
   width: 70px;
   height: 70px;
 }
@@ -546,10 +559,10 @@ header {
   display: flex;
   align-items: baseline;
 }
-.what-we-do-item {
+.skills__item {
   position: relative;
 }
-.solution {
+.skills__text-solution {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.17;
@@ -562,7 +575,7 @@ header {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  border: 1px solid var(--button-text-color);
+  border: 1px solid var(--sixth-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   bottom: 0;
 }
@@ -768,33 +781,6 @@ header {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-/*.checkbox-agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 7px;
-  margin-bottom: 30px;
-}
-.checkbox {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.checkbox-input {
-  visibility: hidden;
-}
-.checkbox-input:hover:checked + .checkbox:checked {
-  color: var(--fourth-color);
-  border: var(--fourth-color);
-  fill: var(--fourth-color);
-}*/
-
-/* .checkbox-input:checked ~ .checkbox-thick {
-  visibility: visible;
-}
-.checkbox-input:checked + .checkbox-square {
-  visibility: hidden;
-}*/
 .declaration-label {
   display: flex;
   margin-left: 7px;

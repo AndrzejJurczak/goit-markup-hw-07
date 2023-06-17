@@ -1,8 +1,9 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
 Praca domowa #6z kursu GoIT FullStack Developer
 
-https://andrzejjurczak.github.io/goit-markup-hw-06/
+Strona:
+https://andrzejjurczak.github.io/goit-markup-hw-07/
 
 Repozytorium:
-https://github.com/AndrzejJurczak/goit-markup-hw-06
+https://github.com/AndrzejJurczak/goit-markup-hw-07
