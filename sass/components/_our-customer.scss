@@ -1,0 +1,28 @@
+.our-customer {
+  display: flex;
+  gap: 30px;
+
+  &__logo {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    color: var(--icon-style);
+    border-radius: 4px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    cursor: pointer;
+    color: var(--fourth-color);
+  }
+}

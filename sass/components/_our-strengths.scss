@@ -1,0 +1,36 @@
+.our-strengths-section {
+  padding-bottom: 0;
+}
+.our-strengths {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  justify-content: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--third-text-color);
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    width: 270px;
+  }
+  &__block {
+    background-color: var(--fifth-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}

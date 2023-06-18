@@ -1,0 +1,36 @@
+.header-navigation {
+  &__list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 46px;
+  }
+  &__link {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--fourth-color);
+  }
+
+  .current {
+    color: var(--fourth-color);
+  }
+  .current::after {
+    content: "";
+    display: block;
+    position: relative;
+    position: absolute;
+    width: 58px;
+    height: 4px;
+    margin-top: 28px;
+    background: var(--fourth-color);
+    border-radius: 2px;
+  }
+}

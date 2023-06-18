@@ -1,73 +1,24 @@
 @import "./utils/variables";
 
-body {
-  font-family: $defaultMainFont;
-  background-color: $background-color-1;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  text-decoration: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-}
-ul,
-ol {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+@import "./components/backdrop";
+@import "./components/checkbox-declaration";
+@import "./components/footer-contact";
 
-header {
-  border-bottom: 1px solid $line-color;
-}
-.main-title {
-  color: $secondary-text-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  max-width: 696px;
-  margin: 0 auto;
-}
+@import "./components/form-footer";
+@import "./components/form-registration";
+@import "./components/global-styles";
+@import "./components/header-navigation";
 
-.what-we-do-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+@import "./components/hero";
+@import "./components/is-hidden";
+@import "./components/logo";
+@import "./components/modal-close";
+@import "./components/modal";
+@import "./components/our-customer";
+@import "./components/our-strengths";
+@import "./components/page-header";
+@import "./components/skills";
+@import "./components/social-footer";
+@import "./components/social-item";
+@import "./components/social-list";
+@import "./components/team-member";
