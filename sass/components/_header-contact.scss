@@ -1,0 +1,41 @@
+.header-contact {
+  font-weight: 500;
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  &__link {
+    font-weight: 500;
+    line-height: 1.17;
+    color: var(--third-text-color);
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon-email {
+    width: 16px;
+    height: 12px;
+  }
+  &__icon-smartphone {
+    width: 12px;
+    height: 16px;
+  }
+  &__icon-email,
+  &__icon-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:hover,
+  &__item:focus,
+  &__link:focus,
+  &__link:hover {
+    color: var(--fourth-color);
+    cursor: pointer;
+    fill: currentColor;
+  }
+}

@@ -39,11 +39,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
   }
-  &__input-style:focus-within,
-  &__window:focus-within {
-    fill: var(--fourth-color);
-    border-color: var(--fourth-color);
-  }
+
   &__icon-person,
   &__icon-phone,
   &__icon-email {
@@ -54,15 +50,18 @@
     transform: translateY(-50%);
     top: 50%;
     left: 13px;
-  }
-  &__window:focus,
-  &__icon-person,
-  &__icon-phone,
-  &__icom-email {
-    fill: var(--fourth-color);
+    fill: var(--main-text-color);
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input-style:focus-within,
+  &__window:focus-within,
+  &__icon-person:focus-within,
+  &__icon-phone:focus-within,
+  &__icon-email:focus-within {
+    border-color: var(--fourth-color);
+    fill: red;
   }
   &__comment {
     height: 120px;

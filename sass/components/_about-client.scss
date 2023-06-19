@@ -1,0 +1,21 @@
+.about-client {
+  padding: 20px 24px;
+  border-right: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
+  border-left: 1px solid var(--borderColor);
+  color: var(--main-text-color);
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  &__service {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--third-text-color);
+    text-align: left;
+  }
+}

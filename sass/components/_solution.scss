@@ -1,0 +1,27 @@
+.solution {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item a:hover,
+  &__item a:focus {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--secondary-text-color);
+  }
+
+  &__overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  &__link {
+    display: block;
+    transition: box-shadow;
+  }
+
+  &__solution:hover .overlay,
+  &__solution:focus .overlay {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(0);
+  }
+}

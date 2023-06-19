@@ -39,4 +39,8 @@
     line-height: 1.71;
     color: rgba(117, 117, 117, 1);
   }
+  &__terms-link {
+    color: var(--fourth-color);
+    text-decoration: underline;
+  }
 }

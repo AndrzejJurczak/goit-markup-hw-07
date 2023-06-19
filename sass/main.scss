@@ -1,12 +1,17 @@
 @import "./utils/variables";
 
+@import "./components/about-client";
 @import "./components/backdrop";
+@import "./components/button-portfolio";
 @import "./components/checkbox-declaration";
 @import "./components/footer-contact";
-
+@import "./components/footer-wrapper";
 @import "./components/form-footer";
 @import "./components/form-registration";
 @import "./components/global-styles";
+
+@import "./components/header-contact";
+
 @import "./components/header-navigation";
 
 @import "./components/hero";
@@ -16,9 +21,12 @@
 @import "./components/modal";
 @import "./components/our-customer";
 @import "./components/our-strengths";
+@import "./components/overlay";
 @import "./components/page-header";
 @import "./components/skills";
 @import "./components/social-footer";
 @import "./components/social-item";
 @import "./components/social-list";
+@import "./components/social-list-2";
+@import "./components/solution";
 @import "./components/team-member";

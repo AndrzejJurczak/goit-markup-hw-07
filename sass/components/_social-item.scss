@@ -1,12 +1,8 @@
-.social-item__icon-instagram,
-.social-item__icon-twitter,
-.social-item__icon-facebook,
-.social-item__icon-linkedin {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-}
 .social-item {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
   &__link {
     width: 44px;
     height: 44px;
@@ -23,5 +19,13 @@
   &__link:focus {
     color: var(--background-color-1);
     background-color: var(--fourth-color);
+  }
+  &__icon-instagram,
+  &__icon-twitter,
+  &__icon-facebook,
+  &__icon-linkedin {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
   }
 }
