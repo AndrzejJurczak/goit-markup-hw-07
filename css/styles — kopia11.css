@@ -505,7 +505,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
   line-height: 1.17;
 }
 .social-icon-footer {
@@ -513,6 +512,7 @@ header {
   margin-right: 78px;
 }
 .social-icon-footer-list {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -533,7 +533,6 @@ header {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .social-icon-footer-link:hover,
@@ -629,6 +628,7 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 .modal-close {
   position: absolute;
@@ -652,9 +652,9 @@ header {
 .about-client > h3 {
   text-decoration: none;
 }
-/* zadanie 6*/
-.form-button,
-.modal-button {
+/* ---------- homework 6 -------------*/
+.newsletter-button,
+.reg-button {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.87;
@@ -666,23 +666,179 @@ header {
   background-color: var(--fourth-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.form-send {
+.reg-button {
+  padding: 10px 76px;
+  margin: 0 auto;
+}
+.newsletter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.newsletter-icon {
   width: 24px;
   height: 24px;
   fill: var(--background-color-1);
 }
 .subscription {
+  display: flex;
+  margin-top: 20px;
+}
+.subscription-email {
   width: 358px;
-  height: 50;
+  background: rgba(47, 48, 58, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  color: var(--fifth-color);
+  padding: 15px 16px;
+}
+/* registration */
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: rgba(33, 33, 33, 1);
+  margin-bottom: 12px;
+}
+.label-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  color: rgba(117, 117, 117, 1);
+}
+.label-title:nth-child(n + 4) {
+  margin-bottom: 20px;
+}
+.input-style {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-registration-window {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+.input-style:focus-within,
+.modal-registration-window:focus-within {
+  fill: var(--fourth-color);
+  border-color: var(--fourth-color);
+}
+.modal-registration-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  fill: rgba(33, 33, 33, 1);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 13px;
+}
+.modal-registration-window:focus + .modal-registration-icon {
+  fill: var(--fourth-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment {
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+}
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+/*.checkbox-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  margin-bottom: 30px;
+}
+.checkbox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
-.subscription .form-email {
-  width: 358px;
-  height: 50px;
+.checkbox-input {
+  visibility: hidden;
 }
-.subscription .form-button {
-  width: 358px;
-  height: 50;
+.checkbox-input:hover:checked + .checkbox:checked {
+  color: var(--fourth-color);
+  border: var(--fourth-color);
+  fill: var(--fourth-color);
+}*/
+
+/* .checkbox-input:checked ~ .checkbox-thick {
+  visibility: visible;
 }
+.checkbox-input:checked + .checkbox-square {
+  visibility: hidden;
+}*/
+.declaration-label {
+  display: flex;
+  margin-left: 7px;
+  margin-bottom: 30px;
+}
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  fill: var(--background-color-1);
+}
+.modal-checkbox {
+  visibility: hidden;
+}
+
+.checkbox-square {
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox-checked {
+  fill: var(--fifth-color);
+  background-color: var(--fourth-color);
+  width: 16px;
+  height: 15px;
+  position: relative;
+  right: 16px;
+  visibility: hidden;
+}
+.modal-checkbox:checked ~ .checkbox-checked {
+  visibility: visible;
+}
+.modal-checkbox:checked + .checkbox-square {
+  visibility: hidden;
+}
+
+.checkbox-rules {
+  line-height: 1.71;
+  color: rgba(117, 117, 117, 1);
+}
+.terms-link {
+  color: var(--fourth-color);
+  text-decoration: underline;
+}
+
+/* --------------- end homework 6 -----------*/

@@ -1,9 +1,10 @@
+//// global
 @import "./utils/variables";
 @import "./components/global-styles";
 
+//// index
 @import "./components/about-client";
 @import "./components/backdrop";
-@import "./components/button-portfolio";
 @import "./components/checkbox-declaration";
 @import "./components/footer-contact";
 @import "./components/footer-wrapper";
@@ -17,11 +18,13 @@
 @import "./components/modal-close";
 @import "./components/modal";
 @import "./components/our-customer";
-@import "./components/our-customers-portfolio";
 @import "./components/our-strengths";
 @import "./components/page-header";
-@import "./components/skills";
-@import "./components/social-item";
+@import "./components/main-what-we-do";
 @import "./components/social-list";
-@import "./components/social-list-2";
+@import "./components/footer-social-list";
 @import "./components/team-member";
+
+//// portfolio
+@import "./components/button-portfolio";
+@import "./components/our-customers-portfolio";

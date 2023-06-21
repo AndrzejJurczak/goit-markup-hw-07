@@ -60,8 +60,8 @@
   &__icon-person:focus-within,
   &__icon-phone:focus-within,
   &__icon-email:focus-within {
+    fill: currentColor;
     border-color: var(--fourth-color);
-    fill: red;
   }
   &__comment {
     height: 120px;
